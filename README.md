@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Career Intelligence Platform
 
-## Getting Started
+An advanced, production-ready AI-powered career assistant built with **Next.js 16 (App Router)** and **Google Gemini AI SDK**. Designed to streamline the job search workflow with deep parsing, automated resume tailoring, bullet-point optimization, and interactive interview loops.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **AI Job Description Parser:** Instantly extracts key requirements, tech stacks, and seniority levels from raw job descriptions.
+* **Smart Resume Tailoring:** Dynamically tailors resume content to align with specific target roles using structured JSON output.
+* **Bullet Point Auditor & Rewriter:** Reframes experience bullets into high-impact, results-driven achievements.
+* **AI Cover Letter Generator:** Crafts professional, contextual cover letters matching job requirements.
+* **Interactive Interview Loop:** Simulates real technical/behavioral interview scenarios with dynamic AI-driven follow-ups.
+* **Robust Error Handling & Sanitization:** Implements `safeParseJSON` and graceful fallbacks to ensure zero UI crashes from LLM response drift.
+* **Modern Dark-Mode SaaS UI:** Built with Tailwind CSS, custom slate-zinc gradients, ambient glows, and progressive loading states.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+* **Framework:** Next.js (App Router, Turbopack)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **AI SDK:** `@google/genai` (Google GenAI SDK)
+* **Deployment:** Vercel
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Getting Started Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/ai-job-parser.git](https://github.com/YOUR_USERNAME/ai-job-parser.git)
+   cd ai-job-parser
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Install Dependencies:
+npm install
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Set up your environment variables:
+Create a .env.local file in the root directory and add your Gemini API key:
+
+Code snippet
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+
+
